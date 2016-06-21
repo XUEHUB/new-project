@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+ <head>
+    <meta charset="utf-8" />
+    <title>es6初步学习</title>
+    <script src="js/traceur.js"></script><!--加载Traceur的库文件-->
+    <script src="js/BrowserSystem.js"></script><!--将这个库文件用于浏览器环境-->
+    <script src="js/bootstrap.js"></script><!--将这个库文件用于浏览器环境-->
+    <script src="jquery.js"></script>
+   
+</head>
+<body>
+    
+</body>
+</html>
+<script type="module">
+  class Calc {
+    constructor(){
+      console.log('Calc constructor');
+    }
+    add(a, b){
+      return a + b;
+    }
+  }
+
+  var c = new Calc();
+  console.log(c.add(4,5));
+</script>
